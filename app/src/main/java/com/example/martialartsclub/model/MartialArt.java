@@ -52,6 +52,6 @@ public class MartialArt {
     @NonNull
     @Override
     public String toString() {
-        return martialArtID  + " " + martialArtName + " " + martialArtPrice + " " + martialArtColor + "\n";
+        return martialArtID  + " " + martialArtName + " " + martialArtPrice + " " + martialArtColor ;
     }
 }

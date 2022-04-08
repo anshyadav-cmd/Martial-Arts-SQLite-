@@ -48,7 +48,7 @@ public class DeleteMartialArtActivity extends AppCompatActivity implements Radio
             currentRadioButton.setId(martialArt.getMartialArtID());
             currentRadioButton.setText(martialArt.toString());
 
-            radioGroup.addView(radioGroup);
+            radioGroup.addView(currentRadioButton);
         }
 
         radioGroup.setOnCheckedChangeListener(this);

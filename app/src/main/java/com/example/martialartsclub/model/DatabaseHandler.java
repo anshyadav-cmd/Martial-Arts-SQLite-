@@ -66,9 +66,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase database = getWritableDatabase();   // this.getWritableDatabase(), just because we are
         // extending from SQLiteHelper class that's why we don't have to write it like this
 
-        String addMarticalArtSQLCommand = "INSERT INTO " + MARTIAL_ARTS_TABLE + " ( " +
-                NAME_KEY + " , " + PRICE_KEY + " , " + COLOR_KEY + " ) " +
-                " VALUES " + " ( '" + martialArt.getMartialArtName() + "' , '" +
+        String addMarticalArtSQLCommand = "INSERT INTO " + MARTIAL_ARTS_TABLE +
+                " VALUES " + " ( null , '" + martialArt.getMartialArtName() + "' , '" +
                 martialArt.getMartialArtPrice() + "' , '" +
                 martialArt.getMartialArtColor() + "' ) ";
 
@@ -125,7 +124,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         while(cursor.moveToNext()) {
             MartialArt currentMartialArt = new MartialArt(
-                    Integer.getInteger(cursor.getString(0)),
+                    cursor.getInt(0),
                     cursor.getString(1),
                     cursor.getDouble(2),
                     cursor.getString(3)

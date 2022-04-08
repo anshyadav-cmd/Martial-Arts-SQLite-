@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, AddMartialArtActivity.class);
                 startActivity(intent);
                 return true;
+            case R.id.delete_martial_arts_menuItem:
+                startActivity(new Intent(this, DeleteMartialArtActivity.class));
+                return  true;
         }
 
         return super.onOptionsItemSelected(item);
