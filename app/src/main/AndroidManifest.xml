@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MartialArtsClub">
         <activity
+            android:name=".DeleteMartialArtActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddMartialArtActivity"
             android:exported="false" />
         <activity
