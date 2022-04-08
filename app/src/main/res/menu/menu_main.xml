@@ -2,6 +2,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.martialartsclub.MainActivity">
+
+
+<!--     showAsAction here ifRoom if there is room in toolbar then the menu option will show there and we can also set priorities to-->
+<!--     the menu options-->
     <item
         android:id="@+id/add_martial_art_menuItem"
         android:title="Add Martial Art"

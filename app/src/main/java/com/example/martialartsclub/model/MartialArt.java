@@ -1,5 +1,7 @@
 package com.example.martialartsclub.model;
 
+import androidx.annotation.NonNull;
+
 public class MartialArt {
 
     private int martialArtID;
@@ -45,5 +47,11 @@ public class MartialArt {
 
     public void setMartialArtColor(String martialArtColor) {
         this.martialArtColor = martialArtColor;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return martialArtID  + " " + martialArtName + " " + martialArtPrice + " " + martialArtColor + "\n";
     }
 }

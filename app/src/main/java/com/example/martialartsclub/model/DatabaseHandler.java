@@ -19,6 +19,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String PRICE_KEY = "price" ;
     private static final String COLOR_KEY = "color";
 
+    /**
+     * compulsory Constructor
+     * @param context
+     */
     public DatabaseHandler(Context context) {
         super(context ,DATABASE_NAME, null, DATABASE_VERSION);
     }
